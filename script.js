@@ -126,7 +126,7 @@ dot.addEventListener('click',function(e){
         result.textContent=result.textContent+e.target.textContent;
     }
     if(lastClicked===3){
-        result.textContent='.';
+        result.textContent='0.';
     }
     dotClicked=1;
 });
