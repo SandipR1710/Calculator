@@ -47,7 +47,6 @@ body{
     height: 60px;
     width:60px;
     margin: 5px;
-    /* background-color:aquamarine; */
     transition: transform 0.2s ease;
     color:rgb(171, 191, 255);
     display: flex;

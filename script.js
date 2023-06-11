@@ -91,19 +91,19 @@ eq.addEventListener('click',function(e){
         let x=parseFloat(ex.substring(0,n-1));
         let y=parseFloat(result.textContent);
         if(ex[n-1]=='+'){
-            exp.textContent=exp.textContent+result.textContent;
+            exp.textContent=exp.textContent+result.textContent+'=';
             result.textContent=Math.round((x+y) * 1000) / 1000;
         }
         else if(ex[n-1]=='-'){
-            exp.textContent=exp.textContent+result.textContent;
+            exp.textContent=exp.textContent+result.textContent+'=';
             result.textContent=Math.round((x-y) * 1000) / 1000;
         }
         else if(ex[n-1]=='÷'){
-            exp.textContent=exp.textContent+result.textContent;
+            exp.textContent=exp.textContent+result.textContent+'=';
             result.textContent=Math.round((x/y) * 1000) / 1000;
         }
         else if(ex[n-1]=='×'){
-            exp.textContent=exp.textContent+result.textContent;
+            exp.textContent=exp.textContent+result.textContent+'=';
             result.textContent=Math.round((x*y) * 1000) / 1000;
         }
         for(let i=0;i<result.textContent.length;i++){
